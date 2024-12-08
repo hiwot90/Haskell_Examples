@@ -1,0 +1,44 @@
+name:                haskell-examples
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            
+license:             BSD3
+author:              Mark Nichols
+maintainer:          marklnichols@gmail.com
+copyright:           2017 Mark Nichols
+extra-source-files:
+- README.md
+
+dependencies:
+  - base
+  - extra
+  - safe
+
+library:
+  source-dirs:
+  - src
+  ghc-options: -Wall
+  exposed-modules:
+  - Misc
+  - Primes
+  - Fibonacci
+  - ProjectEuler.Problem1
+  - ProjectEuler.Problem2
+  - ProjectEuler.Problem3
+  - ProjectEuler.Problem4
+  - ProjectEuler.Problem5
+  - ProjectEuler.Problem6
+  - ProjectEuler.Problem7
+  - ProjectEuler.Problem8
+  - ProjectEuler.Problem9
+  - ProjectEuler.Problem10
+
+executables:
+  haskell-examples-exe:
+    main: Main.hs
+    source-dirs:
+    - src
+    - main
+    ghc-options:
+    - -Wall
